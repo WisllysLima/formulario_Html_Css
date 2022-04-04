@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Formulario.css" media"screen">
+    <title>Cadastro</title>
+</head>
+<body>
+    <Div>
+        <h1 id=titulo>Sobre cinema</h1>
+        <p id="subtitulo">Preencha o formulario de acordo com você:</p>
+        <br>
+    </Div>
+    <form>
+        <fieldset class="grupo">
+            <div id="campo">
+                <label for="nome"><strong>Nome</strong>:</label>
+                <input type= "text"="name" id="nome" required>
+            </div>
+            <br>
+            <div id="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong>:</label>
+                <input type="text" name= "sobrenome" id= "sobrenome" required>
+            </div>
+            <br>
+            <div id="campo">
+                <label for="email"><strong>Email</strong>:</label>
+                <input type= "email" name= "email" id="email" required>
+            </div>
+            <br>
+            <div id="campo">
+                <label><strong>Qual estilo de filmes você gosta?</strong></label><br>  <br>
+                <label>
+                    <input type="radio" name= "devweb" value= "Ação"> Ação
+                </label>
+                <label>
+                    <input type="radio" name= "devweb" value= "Comédia"> Comédia
+                </label>
+                <label>
+                    <input type="radio" name= "devweb" value= "Drama"> Drama <br>
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value= "Ficção Científica"> Ficção Científica
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="Romance"> Romance <br>
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="Suspense"> Suspense
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="Terror"> Terror
+                </label>
+            </div>  
+<br>
+                <div id="campo">
+                    <label for="streaming-favoto"><strong>Qual seu serviço de streaming favorito?</strong></label>
+                    <select id= "streaming">
+                    <option selected disabled value ="">Selecione..</option>
+                    <option>Netflix</option>
+                    <option>PrimeVideo</option>
+                    <option>Disney+</option>
+                    <option>HboMax</option>
+                    <option>Star+</option>
+                    <option>AppleTv</option>
+                    </select>
+                </div>
+<br>
+                <fieldset class="grupo">
+                    <div>
+                        <label><strong>Selecione onde você costuma assistir suas series e filmes.</strong></label> <br>
+                        <input type="checkbox" id="plataforma1" name="plataforma1" value="Tv">
+                        <label for="plataforma1">TV</label>
+                        <input type="checkbox" id="plataforma2" name="plataforma2" value="Smartphone">
+                        <label for="plataforma2">Smartphone</label>
+                        <input type="checkbox" id="platforma3" name= "plataformar3" value="Computador"
+                        <label for="plataforma3">Computador</label>
+                    </div>
+                </fieldset>
+
+                <div id="campo">
+                    <br>
+                    <label><strong>Conte o que você mais gosta no mundo da 7º arte:</strong></label> <br>
+                    <textarea row= "30" style= "width: 26em" id="gosto-pessoal" name="gosto-pessoal"></textarea>
+                </div>
+                <button class= "botao" type= "submit">Enviar</button>
+               
+            
+        </fieldset>
+    </form>
+</body>
+</html>
